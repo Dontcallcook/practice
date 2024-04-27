@@ -1,8 +1,9 @@
-x = 5
+my_string = "::hwuiehf :; Hello."
 
-def cant_change_x(num):
-    x = 10
-    return x
+punct_list = [".", ",", ":", ";", "!", "?", "-"]
 
-cant_change_x(x)
-print(x) # outputs 5
+for char in my_string:
+    if char in punct_list:
+        my_string = my_string.replace(char, "")
+      
+print(my_string)
